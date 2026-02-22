@@ -55,7 +55,6 @@ class ColorPickerApp:
     def get_color(self, event):
         if not self.image:
             return
-        pip install -r requirements.txt
         x, y = event.x, event.y
         rgb = self.image.getpixel((x, y))
         hex_color = rgb_to_hex(rgb)
